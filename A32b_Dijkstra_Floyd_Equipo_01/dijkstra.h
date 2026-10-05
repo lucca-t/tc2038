@@ -1,5 +1,5 @@
 /*
- * Descripcion: Programa que implementa dijsktra usando un priority queue
+ * Descripcion: Programa que implementa Dijkstra usando un priority queue
  * Autores: Lucca Traslosheros Abascal A01713944
  *          Oscar Lopez Cardoso A01713355
  * Fecha: 04/10/2026.
@@ -51,7 +51,8 @@ inline void dijkstraAllPairs(int n, const vector<vector<long long>> &graph) {
       }
     }
 
-    // Se omite la distancia del nodo hacia sí mismo, como en el ejemplo solicitado.
+    // Se omite la distancia del nodo hacia sí mismo, como en el ejemplo
+    // solicitado.
     for (int dst = 0; dst < n; ++dst) {
       if (src != dst) {
         long long val = (dist[dst] == DIJKSTRA_INF) ? -1 : dist[dst];

@@ -1,7 +1,12 @@
-#include <iostream>
-#include <vector>
+/*
+ * Descripcion: Programa main que contiene las entradas y salidas implementando
+ * Dijsktra y Floyd Warshall Autores: Lucca Traslosheros Abascal A01713944 Oscar
+ * Lopez Cardoso A01713355 Fecha: 04/10/2026.
+ */
 #include "dijkstra.h"
 #include "floyd.h"
+#include <iostream>
+#include <vector>
 
 using namespace std;
 
@@ -12,22 +17,23 @@ using namespace std;
 // Algoritmo de Floyd-Warshall:
 // Tiempo: O(N^3), Espacio adicional y total: O(N^2)
 int main() {
-    // Optimización de entrada/salida
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-    
-    int n;
-    if (!(cin >> n)) return 0;
-    
-    vector<vector<long long>> graph(n, vector<long long>(n));
-    for (int i = 0; i < n; ++i) {
-        for (int j = 0; j < n; ++j) {
-            cin >> graph[i][j];
-        }
-    }
-    
-    dijkstraAllPairs(n, graph);
-    floydWarshall(n, graph);
-    
+  // Optimización de entrada/salida
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL);
+
+  int n;
+  if (!(cin >> n))
     return 0;
+
+  vector<vector<long long>> graph(n, vector<long long>(n));
+  for (int i = 0; i < n; ++i) {
+    for (int j = 0; j < n; ++j) {
+      cin >> graph[i][j];
+    }
+  }
+
+  dijkstraAllPairs(n, graph);
+  floydWarshall(n, graph);
+
+  return 0;
 }
