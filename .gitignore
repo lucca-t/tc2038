@@ -1,0 +1,41 @@
+# Compiled binaries
+*.out
+*.exe
+*.app
+*.bin
+*.elf
+main
+programa
+
+# Object and dependency files
+*.o
+*.obj
+*.d
+*.a
+*.so
+*.dll
+
+# Build directories
+build/
+bin/
+obj/
+cmake-build-*/
+
+# Debugging and profiling files
+*.dSYM/
+*.stackdump
+*.gcda
+*.gcno
+*.gcov
+
+# IDE and editor files
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Operating system files
+.DS_Store
+Thumbs.db
