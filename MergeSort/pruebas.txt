@@ -1,0 +1,37 @@
+Casos de Prueba - A14_MergeSort
+
+1. Caso Base - Elementos desordenados generales
+Entrada:
+7
+38 27 43 3 9 82 10
+Salida Esperada:
+82 43 38 27 10 9 3
+Explicacion: Prueba estándar indicada en las instrucciones, 
+valida un ordenamiento normal de un arreglo de tamaño impar.
+
+2. Caso Repetidos - Elementos duplicados y tamaño par
+Entrada:
+10
+5 2 7 6 2 1 0 3 9 4
+Salida Esperada:
+9 7 6 5 4 3 2 2 1 0
+Explicacion: Prueba estándar indicada en las instrucciones, 
+valida que el algoritmo preserve correctamente elementos idénticos (el número 2).
+
+3. Caso Extremo - Valores ya ordenados (inversamente a lo solicitado)
+Entrada:
+5
+1.1 2.2 3.3 4.4 5.5
+Salida Esperada:
+5.5 4.4 3.3 2.2 1.1
+Explicacion: Caso extremo para asegurar que el algoritmo funciona bien si la 
+entrada inicial es ascendente. También verifica el uso de números reales (decimales).
+
+4. Caso Extremo - Un solo elemento y números negativos
+Entrada:
+6
+-5.5 0 10.2 -3.1 0 4
+Salida Esperada:
+10.2 4 0 0 -3.1 -5.5
+Explicacion: Evalúa el manejo correcto de números reales negativos, 
+positivos y el cero al mismo tiempo.
